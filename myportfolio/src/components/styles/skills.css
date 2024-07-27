@@ -1,0 +1,106 @@
+.skills {
+  position: relative;
+  padding: 5rem 2rem;
+  background: #121212; /* Fundo escuro e futurista */
+  color: #e0e0e0; /* Texto claro e frio */
+  font-family: 'Roboto', sans-serif; /* Fonte moderna */
+}
+
+.skills h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-left: 30rem;
+  color: #ffffff; /* Cor do título em branco */
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.skills h2::after {
+  content: '';
+  width: 50px;
+  height: 4px;
+  background: #ffffff; /* Linha branca embaixo do título */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  gap: 2rem;
+}
+
+.skill-category {
+  display: flex;
+  justify-content: center; /* Centraliza as categorias horizontalmente */
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.skill-category h3 {
+  font-size: 1.8rem;
+  color: #ffffff; /* Cor do subtítulo em branco */
+}
+
+.skill-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  background: #1e1e1e; /* Fundo escuro para os cards */
+  border-radius: 5px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais sutil */
+  padding: 0.5rem;
+  text-align: left;
+  width: 150px; /* Tamanho reduzido para cards mais limpos */
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px); /* Levanta o card ao passar o mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra mais intensa ao passar o mouse */
+}
+
+.skill-icon {
+  font-size: 2rem; /* Tamanho reduzido dos ícones */
+  margin-bottom: 0.5rem;
+  color: #ffffff; /* Cor dos ícones em branco */
+}
+
+.skill-name {
+  font-size: 1rem;
+  color: #e0e0e0; /* Texto claro para os nomes das habilidades */
+}
+/* styles/skills.css */
+
+.scroll-down-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.scroll-down-button button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333; /* add a default color */
+}
+
+.scroll-down-button button:hover {
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}

@@ -1,0 +1,165 @@
+/* Estilo principal da seção */
+.presentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh; /* Garante que a altura mínima seja a altura total da tela */
+  padding: 0 2rem;
+  background: linear-gradient(135deg, #ffffff, #f0f0f0);
+  color: #333;
+}
+
+/* Seções laterais */
+.left, .right {
+  flex: 1; /* Garante que as seções laterais ocupem o mesmo espaço */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  margin-left: -375px;
+}
+
+
+.right {
+  position: relative;
+  display: inline;
+  width: 500px;
+  height: 150px;
+}
+
+/* Estilo da imagem de perfil */
+
+
+/* Estilo dos ícones sociais */
+.social-icons {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: top; /* adicionado para alinhar os ícones com a imagem */
+  margin: 20px;; /* ajuste o valor para que os ícones fiquem mais para cima */
+}
+.social-media {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block; /* adicionado para que os ícones fiquem na mesma linha */
+}
+
+.social-media li {
+  display: flex;
+  flex-direction: column; /* adicionado para que os ícones fiquem na mesma linha */
+  margin-right: 10px;
+  margin: 10px;
+  gap: 20px;
+ /* ajuste a margem para que os ícones fiquem separados */
+}
+
+.social-media a {
+  color: #333;
+  transition: color 0.3s ease;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #555;
+}
+
+/* Estilo central */
+.center {
+  flex: 2; /* Garante que a seção central ocupe mais espaço */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.presentation-text {
+  text-align: left; /* alinhe o texto à esquerda */
+  margin-top: 50px;
+  max-width: 600px;
+  width: 100%; /* Garante que o texto de apresentação use todo o espaço disponível */
+}
+
+/* Estilo dos títulos e subtítulos */
+.presentation-title {
+  font-size: 5rem;
+  text-align: left;
+  color: #333;
+  margin: 0.rem 0;
+  font-weight: bold;
+}
+
+.first-text {
+  display: flex;
+  margin-left: 24rem;
+  font-size: 1.4rem;
+  color: #666;
+}
+
+.subtitle {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.impact-phrase {
+  display: flex;
+  text-align: right;
+  margin-left: 18.5rem;
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #444;
+  font-style: italic;
+}
+
+/* Estilo dos botões */
+.button-components {
+  display: flex;
+  gap: 1rem;
+  justify-content: left;
+  margin-top: 2rem;
+}
+
+.curriculum-button,
+.contact-button {
+  background: #333333;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.curriculum-button:hover,
+.contact-button:hover {
+  background: #8a8a8a;
+}
+
+.scroll-down-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.scroll-down-button button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.scroll-down-button button:hover {
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}

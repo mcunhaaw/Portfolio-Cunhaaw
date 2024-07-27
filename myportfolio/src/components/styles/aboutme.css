@@ -1,0 +1,99 @@
+.about-me {
+  padding: 4rem 2rem;
+  background: #ffffff; /* Cor de fundo branca */
+  color: #333333; /* Cor do texto escura para contraste */
+  font-family: 'Arial', sans-serif;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Alinha horizontalmente ao centro */
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve para um visual clean */
+  transition: transform 0.3s ease;
+}
+
+.profile-picture:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.about-me-text {
+  max-width: 700px;
+}
+
+.about-me h2 {
+  font-size: 36px;
+  margin-bottom: 1rem;
+  color: #000000; /* Cor escura para o título */
+}
+
+.about-me p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #666666; /* Cor do texto mais suave */
+}
+
+.scroll-down-button button {
+  cursor: pointer;
+}
+
+.scroll-down-button button:hover {
+  color: #666666;
+}
+
+.scroll-down-button button:focus {
+  outline: none;
+}
+
+.scroll-down-button i {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .about-me-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Alinha o texto ao centro em telas menores */
+  }
+
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+  }
+
+  .about-me h2 {
+    font-size: 28px;
+  }
+
+  .about-me p {
+    font-size: 16px;
+  }
+
+  .contact-link {
+    font-size: 16px;
+  }
+}
