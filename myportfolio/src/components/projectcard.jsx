@@ -1,13 +1,12 @@
 import React from 'react';
-import './styles/projectcard.css';
 
-const ProjectCard = ({ title, image, description }) => {
+const ProjectCard = ({ title, image, description, link }) => {
   return (
     <div className="project-card">
-      <img src={image} alt={title} className="project-image" />
       <h3>{title}</h3>
+      <img src={image} alt={title} className="project-image" />
       <p>{description}</p>
-      <a href="#">Ver mais</a>
+      <a href={link || "#"} target={link ? "_blank" : "_self"} rel={link ? "noopener noreferrer" : ""}>Ver projeto</a>
     </div>
   );
 };
