@@ -36,10 +36,10 @@
 }
 
 .skill-category {
-  display: flex;
+  display: inline-block;
+  flex-direction: row;
   justify-content: center; /* Centraliza as categorias horizontalmente */
   gap: 2rem;
-  flex-wrap: wrap;
 }
 
 .skill-category h3 {
