@@ -14,7 +14,7 @@
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .profile-picture {
@@ -27,6 +27,7 @@
 }
 
 .profile-picture:hover {
+  transition: transform 0.3s ease;
   transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
 
@@ -87,24 +88,74 @@
   }
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
+/* Media queries */
+
+/* Tablets */
+@media only screen and (max-width: 1024px) {
   .about-me-container {
     flex-direction: column;
-    align-items: center;
-    text-align: center; /* Alinha o texto ao centro em telas menores */
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .about-me h2 {
+    font-size: 30px;
+  }
+
+  .about-me p {
+    font-size: 16px;
+  }
+}
+
+/* Smartphones */
+@media only screen and (max-width: 768px) {
+  .about-me-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
   }
 
   .profile-picture {
     width: 120px;
     height: 120px;
+    margin-right: 0;
+    margin-bottom: 1rem;
   }
 
   .about-me h2 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .about-me p {
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .scroll-down-button {
+    bottom: 0.5rem;
+  }
+}
+
+/* Pequenos smartphones */
+@media only screen and (max-width: 480px) {
+  .about-me-container {
+    padding: 1rem;
+  }
+
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+
+  .about-me h2 {
+    font-size: 20px;
+  }
+
+  .about-me p {
+    font-size: 12px;
+  }
+
+  .scroll-down-button {
+    bottom: 0.2rem;
   }
 }

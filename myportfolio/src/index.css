@@ -1,25 +1,86 @@
-/* Reset CSS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Media queries para garantir um layout responsivo eficaz */
+
+/* Telas grandes e monitores ultra-wide */
+@media only screen and (min-width: 1440px) {
+  #root {
+    padding: 0 4rem;
+  }
+
+  .main-content {
+    padding: 2rem;
+  }
 }
 
-/* Garante que o corpo da página e o elemento root ocupem toda a altura da viewport */
-html, body {
-  height: 100%;
-  margin: 0;
+/* Monitores grandes e tablets grandes */
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  #root {
+    padding: 0 3rem;
+  }
+
+  .main-content {
+    padding: 1.5rem;
+  }
 }
 
-/* Estilo para o root */
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Garante que o root ocupe a altura total da viewport */
-  background-color: #f5f5f5;
+/* Tablets e dispositivos móveis médios */
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  #root {
+    padding: 0 2rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
 }
 
-/* Estilo para o conteúdo principal, garantindo que ele ocupe o espaço restante */
-.main-content {
-  flex: 1; /* Permite que o conteúdo principal ocupe o espaço restante */
+/* Smartphones em modo paisagem e tablets pequenos */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  #root {
+    padding: 0 1rem;
+  }
+
+  .main-content {
+    padding: 0.5rem;
+  }
+}
+
+/* Smartphones em modo retrato */
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  #root {
+    padding: 0.5rem;
+  }
+
+  .main-content {
+    padding: 0.5rem;
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte para telas pequenas */
+  }
+}
+
+/* Dispositivos com alta densidade de pixels */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi) {
+  .main-content {
+    font-size: 1rem; /* Ajusta o tamanho da fonte para dispositivos com alta resolução */
+  }
+}
+
+/* Ajustes gerais para orientação */
+@media only screen and (orientation: portrait) {
+  #root {
+    padding: 1rem; /* Ajusta o padding para dispositivos em modo retrato */
+  }
+
+  .main-content {
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #root {
+    padding: 1.5rem; /* Ajusta o padding para dispositivos em modo paisagem */
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
 }

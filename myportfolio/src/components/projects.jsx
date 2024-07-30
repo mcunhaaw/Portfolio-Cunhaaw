@@ -8,7 +8,7 @@ import img1 from '../assets/img1.jpg';
 
 const Projects = () => {
   const handleScrollDown = () => {
-    window.scrollTo({ top: 2495, behavior: 'smooth' });
+    window.scrollTo({ top: 2505, behavior: 'smooth' });
   }
   const settings = {
     dots: true,
