@@ -6,7 +6,7 @@ const cv = '../assets/cv.pdf';
 
 const Home = () => {
   const handleScrollDown = () => {
-    window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
+    window.scrollTo({ top: 660, behavior: 'smooth' });
   };
 
   return (
@@ -17,7 +17,7 @@ const Home = () => {
           <h3 className="first-text">Muito prazer, sou o</h3>
           <h1 className="presentation-title">Matheus Cunha</h1>
           <h4 className="subtitle"> ⮕ Engenheiro de Software</h4>
-          <p className="impact-phrase">Transformando dados em soluções <br />inovadoras e futurísticas.</p>
+          <p className="impact-phrase">Transformando tecnologia em solução e inovação.</p>
           <div className="button-components">
             <a href={cv} download={cv} className="curriculum-button">Download CV</a>
             <a href="#contact" className="contact-button">Contate-me</a>

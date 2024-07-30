@@ -3,6 +3,7 @@
   background: #ffffff; /* Cor de fundo branca */
   color: #333333; /* Cor do texto escura para contraste */
   font-family: 'Arial', sans-serif;
+  position: relative; /* Adiciona o contexto para o botão de rolagem */
 }
 
 .about-me-container {
@@ -13,11 +14,13 @@
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 40px;
 }
 
 .profile-picture {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
+  margin-right: 50px;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve para um visual clean */
   transition: transform 0.3s ease;
@@ -28,7 +31,7 @@
 }
 
 .about-me-text {
-  max-width: 700px;
+  max-width: 750px;
 }
 
 .about-me h2 {
@@ -44,12 +47,24 @@
   color: #666666; /* Cor do texto mais suave */
 }
 
+.scroll-down-button {
+  position: absolute;
+  bottom: 1rem; /* Ajusta a distância do botão da parte inferior */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .scroll-down-button button {
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 24px; /* Tamanho do ícone */
+  color: #333; /* Cor padrão do ícone */
+  transition: color 0.3s ease;
 }
 
 .scroll-down-button button:hover {
-  color: #666666;
+  color: #666666; /* Cor do ícone ao passar o mouse */
 }
 
 .scroll-down-button button:focus {
@@ -90,10 +105,6 @@
   }
 
   .about-me p {
-    font-size: 16px;
-  }
-
-  .contact-link {
     font-size: 16px;
   }
 }

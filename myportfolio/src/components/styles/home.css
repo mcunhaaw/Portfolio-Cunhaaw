@@ -95,7 +95,7 @@
 
 .impact-phrase {
   display: flex;
-  text-align: right;
+  flex-direction: row;
   margin-left: 18.5rem;
   margin-top: 10px;
   font-size: 1.2em;
@@ -109,6 +109,7 @@
   gap: 1rem;
   justify-content: left;
   margin-top: 2rem;
+  margin-left: 18.3rem;
 }
 
 .curriculum-button,
@@ -160,7 +161,7 @@
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid #fff;
-  transition: width 0.3s ease, height 0.3s ease;
+  transition: width 3s ease, height 3 ease-in;
 }
 
 /* Media queries */
@@ -219,7 +220,6 @@
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #fff;
-    transition: width 0.3s ease, height 0.3s ease;
     z-index: 1;
   }
 }

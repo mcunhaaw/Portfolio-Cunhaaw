@@ -31,11 +31,10 @@ const skillsData = [
 
 const Skills = () => {
   const handleScrollDown = () => {
-    window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
-  }
-  const fadeIn = useSpring({ from: { opacity: 0 }, to: { opacity: 1 }, delay: 200 });
+    window.scrollTo({ top: 1925, behavior: 'smooth' });
+  };
   return (
-    <animated.section style={fadeIn} className="skills">
+    <div  className="skills">
       <h2>Stacks Utilizadas</h2>
       <div className="skills-container">
         {skillsData.map((category, index) => (
@@ -51,13 +50,13 @@ const Skills = () => {
             </div>
           </div>
         ))}
-        <div className="scroll-down-button">
-          <button onClick={handleScrollDown}>
-            <i className="fas fa-angle-down"></i>
-          </button>
-        </div>
       </div>
-    </animated.section>
+      <div className="scroll-down-button-white">
+        <button onClick={handleScrollDown}>
+          <i className="fas fa-angle-down"></i>
+        </button>
+      </div>
+    </div>
   );
 };
 

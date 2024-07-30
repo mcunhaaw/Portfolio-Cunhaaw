@@ -1,20 +1,24 @@
+/* styles/skills.css */
+
 .skills {
   position: relative;
-  padding: 5rem 2rem;
+  padding: 4.6rem 2rem;
   background: #121212; /* Fundo escuro e futurista */
   color: #e0e0e0; /* Texto claro e frio */
   font-family: 'Roboto', sans-serif; /* Fonte moderna */
 }
 
+
 .skills h2 {
   text-align: center;
   margin-bottom: 2rem;
+  margin-top: -120px;
   font-size: 2.5rem;
   margin-left: 30rem;
   color: #ffffff; /* Cor do título em branco */
   position: relative;
   display: inline-block;
-  padding-bottom: 0.5rem;
+  padding-bottom: 2rem;
 }
 
 .skills h2::after {
@@ -30,16 +34,17 @@
 
 .skills-container {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Centraliza o conteúdo horizontalmente */
-  gap: 2rem;
+  flex-direction: row; /* Alinha as categorias horizontalmente */
+  justify-content: center;
+  gap: 3rem; /* Espaço entre as categorias */
+  flex-wrap: wrap; /* Permite quebra de linha se necessário */
 }
 
 .skill-category {
-  display: inline-block;
-  flex-direction: row;
-  justify-content: center; /* Centraliza as categorias horizontalmente */
-  gap: 2rem;
+  display: flex;
+  flex-direction: column; /* Alinha os itens dentro da categoria verticalmente */
+  align-items: center; /* Centraliza as habilidades dentro da categoria */
+  gap: 2rem; /* Espaço entre o título da categoria e os cards */
 }
 
 .skill-category h3 {
@@ -49,18 +54,18 @@
 
 .skill-cards {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+  flex-direction: column; /* Alinha as habilidades verticalmente */
+  align-items: center; /* Centraliza os cards dentro da categoria */
+  gap: 1rem; /* Espaço entre os cards */
 }
 
 .skill-card {
   background: #1e1e1e; /* Fundo escuro para os cards */
   border-radius: 5px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais sutil */
-  padding: 0.5rem;
-  text-align: left;
-  width: 150px; /* Tamanho reduzido para cards mais limpos */
+  padding: 0.6rem;
+  text-align: center; /* Alinha o texto centralizado dentro do card */
+  width: 125px; /* Tamanho reduzido para cards mais limpos */
   transition: transform 0.3s, box-shadow 0.3s;
   position: relative;
   overflow: hidden;
@@ -81,26 +86,90 @@
   font-size: 1rem;
   color: #e0e0e0; /* Texto claro para os nomes das habilidades */
 }
-/* styles/skills.css */
 
-.scroll-down-button {
+.scroll-down-button-white {
+  margin-bottom: 15px;
   position: absolute;
-  bottom: 20px;
+  bottom: 1rem; /* Ajusta a distância do botão da parte inferior */
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
 }
 
-.scroll-down-button button {
+.scroll-down-button-white button {
+  cursor: pointer;
   background-color: transparent;
   border: none;
-  padding: 10px;
-  font-size: 24px;
-  cursor: pointer;
-  color: #333; /* add a default color */
+  font-size: 24px; /* Tamanho do ícone */
+  color: #ffffff; /* Cor padrão do ícone */
+  transition: color 0.3s ease;
 }
 
-.scroll-down-button button:hover {
-  color: #fff;
-  transition: color 0.3s ease-in-out;
+.scroll-down-button-white button:hover {
+  color: #666666; /* Cor do ícone ao passar o mouse */
+}
+
+.scroll-down-button-white button:focus {
+  outline: none;
+}
+
+.scroll-down-button-white i {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .skills-container {
+    flex-direction: column; /* Alinha as categorias verticalmente em tablets */
+  }
+
+  .skill-category {
+    gap: 1.5rem; /* Reduz o espaço entre o título da categoria e os cards */
+  }
+
+  .skill-card {
+    width: 130px; /* Ajusta a largura dos cards em tablets */
+  }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+  .skill-card {
+    width: 120px; /* Ajusta a largura dos cards em smartphones */
+  }
+
+  .skill-icon {
+    font-size: 1.5rem; /* Reduz o tamanho dos ícones em smartphones */
+  }
+
+  .skill-name {
+    font-size: 0.9rem; /* Reduz o tamanho da fonte do nome das habilidades */
+  }
+}
+
+/* Pequenos smartphones */
+@media (max-width: 480px) {
+  .skill-card {
+    width: 100px; /* Ajusta a largura dos cards em pequenos smartphones */
+  }
+
+  .skill-icon {
+    font-size: 1.2rem; /* Reduz o tamanho dos ícones em pequenos smartphones */
+  }
+
+  .skill-name {
+    font-size: 0.8rem; /* Reduz o tamanho da fonte do nome das habilidades */
+  }
 }
