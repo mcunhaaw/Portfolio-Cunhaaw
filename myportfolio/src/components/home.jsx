@@ -1,8 +1,8 @@
 import React from 'react';
 import './styles/home.css';
-import profilePicture from '../assets/profile-picture.jpg'; // Ajuste o caminho da imagem conforme necessário
+import profilePicture from '../assets/profile-picture.jpg';
+import cv from '../assets/curriculo.pdf';
 
-const cv = '../assets/cv.pdf';
 
 const Home = () => {
   const handleScrollDown = () => {
