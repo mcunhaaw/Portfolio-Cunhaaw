@@ -1,23 +1,20 @@
-/* Estilização da seção de contato */
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10rem 1rem;
-  background: #f0f4f8; /* Fundo claro e neutro */
+  background: #f0f4f8;
   color: #333;
   font-family: 'Arial', sans-serif;
   margin-top: -135px;
 }
 
-/* Estilização do título da seção de contato */
 .contact h2 {
   font-size: 36px;
-  margin-bottom: 2rem;
-  color: #111; /* Cor escura para o título */
+  margin-bottom: 3rem;
+  color: #111;
 }
 
-/* Estilização do container da seção de contato */
 .contact-container {
   display: flex;
   flex-wrap: wrap;
@@ -27,53 +24,48 @@
   margin: 0 auto;
 }
 
-/* Estilização do formulário de contato */
 .contact-form {
   flex: 1;
   max-width: 600px;
-  background: #ffffff; /* Fundo branco para o formulário */
+  background: #ffffff;
   padding: 2rem;
-  border-radius: 12px; /* Bordas mais arredondadas para um visual mais suave */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra leve para um efeito clean */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilização dos rótulos do formulário de contato */
 .contact-form label {
   display: block;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #333; /* Cor escura para rótulos */
+  color: #333;
 }
 
-/* Estilização dos campos de entrada do formulário de contato */
 .contact-form input,.contact-form textarea {
   width: 100%;
   padding: 0.75rem;
   margin-bottom: 1rem;
-  border: 1px solid #ddd; /* Borda clara */
-  border-radius: 6px; /* Bordas arredondadas suaves */
+  border: 1px solid #ddd;
+  border-radius: 6px;
   box-sizing: border-box;
-  font-size: 16px; /* Fonte moderna e legível */
+  font-size: 16px;
 }
 
-/* Estilização do botão de envio do formulário de contato */
 .send-button {
   padding: 0.75rem 1.5rem;
-  background-color: #333f; /* Azul brilhante para o botão */
+  background-color: #333f;
   color: #fff;
   border: none;
-  border-radius: 6px; /* Bordas arredondadas para o botão */
+  border-radius: 6px;
   font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .send-button:hover {
-  background-color: #333; /* Azul mais escuro ao passar o mouse */
-  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+  background-color: #333;
+  transform: scale(1.05);
 }
 
-/* Estilização das informações de contato */
 .contact-info {
   flex: 1;
   max-width: 400px;
@@ -84,11 +76,10 @@
 .contact-info h3 {
   font-size: 24px;
   margin-bottom: 1.5rem;
-  color: #111; /* Cor escura para o título das informações de contato */
+  color: #111;
   font-weight: 600;
 }
 
-/* Estilização dos ícones sociais */
 .social-icons {
   margin-top: 1rem;
 }
@@ -135,7 +126,8 @@
 /* Small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .contact {
-    padding: 5rem 1rem; /* Reduz o padding para telas menores */
+    overflow-x: hidden;
+    padding: 6.2rem 1rem; /* Reduz o padding para telas menores */
     margin-top: -80px; /* Ajusta a margem superior */
   }
 
@@ -145,85 +137,85 @@
   }
 
   .contact-container {
-    flex-direction: column; /* Alinha os itens em coluna */
-    gap: 1.5rem; /* Reduz o espaçamento entre os itens */
-    max-width: 100%; /* Garante que o container não exceda a largura da tela */
+    flex-direction: column; 
+    gap: 1.5rem; 
+    max-width: 100%; 
   }
 
   .contact-form, .contact-info {
-    max-width: 100%; /* Ajusta a largura máxima para tela pequena */
-    margin: 0 auto; /* Centraliza os itens */
+    max-width: 100%; 
+    margin: 0 auto; 
   }
 
   .contact-info {
-    margin-top: 1.5rem; /* Reduz a margem superior */
+    margin-top: 1.5rem; 
+    margin-bottom: 1.5rem; 
   }
 
   .social-media-c {
     margin-top: -30px;
-    flex-direction: row; /* Alinha os ícones sociais em linha */
-    gap: 1rem; /* Ajusta o espaçamento entre os ícones */
+    flex-direction: row;
+    gap: 1rem; 
   }
 
   .social-media-c li {
-    gap: 0.5rem; /* Reduz o espaçamento entre os ícones e o texto */
+    gap: 0.5rem; 
   }
 
   .social-media-c a {
-    font-size: 16px; /* Reduz o tamanho dos ícones */
+    font-size: 16px;
   }
 
   .contact-form input, .contact-form textarea {
-    font-size: 14px; /* Reduz o tamanho da fonte dos campos de entrada */
+    font-size: 14px; 
   }
 
   .send-button {
-    padding: 0.5rem 1rem; /* Reduz o padding do botão */
-    font-size: 16px; /* Reduz o tamanho da fonte do botão */
+    padding: 0.5rem 1rem; 
+    font-size: 16px; 
   }
 }
 
-/* Medium devices (portrait tablets and large phones, 600px to 768px) */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
   .contact {
-    padding: 7rem 1.5rem; /* Ajusta o padding para telas médias */
-    margin-top: -100px; /* Ajusta a margem superior */
+    padding: 7rem 1.5rem; 
+    margin-top: -100px; 
   }
 
   .contact h2 {
-    font-size: 32px; /* Ajusta o tamanho do título */
-    margin-bottom: 1.5rem; /* Ajusta o espaçamento inferior */
+    font-size: 32px; 
+    margin-bottom: 1.5rem; 
   }
 
   .contact-container {
-    flex-direction: row; /* Alinha os itens em linha */
-    gap: 2rem; /* Ajusta o espaçamento entre os itens */
-    max-width: 100%; /* Garante que o container não exceda a largura da tela */
+    flex-direction: row;
+    gap: 2rem;
+    max-width: 100%; 
   }
 
   .contact-form, .contact-info {
-    max-width: 100%; /* Ajusta a largura máxima para tela média */
+    max-width: 100%; 
   }
 
   .contact-info {
-    margin-top: 1.5rem; /* Ajusta a margem superior */
+    margin-top: 1.5rem; 
   }
 
   .social-media-c {
-    flex-direction: row; /* Alinha os ícones sociais em linha */
-    gap: 1.5rem; /* Ajusta o espaçamento entre os ícones */
+    flex-direction: row; 
+    gap: 1.5rem;
   }
 
   .social-media-c a {
-    font-size: 18px; /* Ajusta o tamanho dos ícones */
+    font-size: 18px; 
   }
 
   .contact-form input, .contact-form textarea {
-    font-size: 15px; /* Ajusta o tamanho da fonte dos campos de entrada */
+    font-size: 15px; 
   }
 
   .send-button {
-    padding: 0.75rem 1.5rem; /* Ajusta o padding do botão */
-    font-size: 18px; /* Ajusta o tamanho da fonte do botão */
+    padding: 0.75rem 1.5rem; 
+    font-size: 18px; 
   }
 }

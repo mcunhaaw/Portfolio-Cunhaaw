@@ -1,4 +1,3 @@
-/* Estilo principal da seção */
 .presentation {
   display: flex;
   flex-direction: row;
@@ -70,8 +69,6 @@
   max-width: 600px;
   width: 100%;
 }
-
-/* Estilo dos títulos e subtítulos */
 .presentation-title {
   font-size: 5rem;
   text-align: left;
@@ -170,8 +167,9 @@
     display: none;
   }
   .presentation {
+    overflow-x: hidden;
     flex-direction: column;
-    padding: 2rem;
+    padding: 3.5rem;
   }
   
   .left {
@@ -180,14 +178,14 @@
   }
   
   .right {
-    order: -1; /* Coloca a foto de perfil no topo */
+    order: -1; 
     margin-top: 60px;
   }
   
   .right .profile-picture {
-    width: 150px;
-    height: 150px;
-    margin: 20px auto; /* Centraliza a imagem */
+    width: 250px;
+    height: 250px;
+    margin: 20px auto; 
     border: 3px solid #fff;
   }
   
@@ -213,7 +211,7 @@
   .button-components {
     margin-left: 0;
     justify-content: center;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
   }
   
   .button-components {

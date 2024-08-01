@@ -1,16 +1,16 @@
 .about-me {
   padding: 8rem 3rem;
-  background: #ffffff; /* Cor de fundo branca */
-  color: #333333; /* Cor do texto escura para contraste */
+  background: #ffffff; 
+  color: #333333; 
   font-family: 'Arial', sans-serif;
-  position: relative; /* Adiciona o contexto para o botão de rolagem */
+  position: relative; 
 }
 
 .about-me-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center; /* Alinha horizontalmente ao centro */
+  justify-content: center; 
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -22,13 +22,13 @@
   height: 200px;
   margin-right: 50px;
   border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve para um visual clean */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   transition: transform 0.3s ease;
 }
 
 .profile-picture:hover {
   transition: transform 0.3s ease;
-  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+  transform: scale(1.05); 
 }
 
 .about-me-text {
@@ -38,19 +38,19 @@
 .about-me h2 {
   font-size: 36px;
   margin-bottom: 1rem;
-  color: #000000; /* Cor escura para o título */
+  color: #000000; 
 }
 
 .about-me p {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 1rem;
-  color: #666666; /* Cor do texto mais suave */
+  color: #666666; 
 }
 
 .scroll-down-button-a {
   position: absolute;
-  bottom: 5.5rem; /* Ajusta a distância do botão da parte inferior */
+  bottom: 5.5rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -59,13 +59,13 @@
   cursor: pointer;
   background-color: transparent;
   border: none;
-  font-size: 24px; /* Tamanho do ícone */
-  color: #333; /* Cor padrão do ícone */
+  font-size: 24px; 
+  color: #333; 
   transition: color 0.3s ease;
 }
 
 .scroll-down-button-a button:hover {
-  color: #666666; /* Cor do ícone ao passar o mouse */
+  color: #666666; 
 }
 
 .scroll-down-button-a button:focus {
@@ -89,74 +89,76 @@
 }
 
 
-/* Media queries para dispositivos grandes */
+/* Media queries para notebooks e desktops */
 @media (max-width: 1048px) {
   .scroll-down-button-a {
-    display: none; /* Ativa o botão de rolagem */
+    display: none; 
   }
 
   .about-me {
-    padding: 8rem 2rem; /* Ajusta o padding */
+    overflow-x: hidden;
+    padding: 8rem 2rem; 
   }
 
   .about-me-container {
-    flex-direction: row; /* Mantém a direção da linha */
-    text-align: left; /* Alinha o texto à esquerda */
+    flex-direction: row; 
+    text-align: left; 
   }
 
   .profile-picture {
-    width: 180px; /* Ajusta o tamanho da imagem de perfil */
+    width: 180px; 
     height: 180px;
-    margin-right: 30px; /* Ajusta a margem direita */
+    margin-right: 30px; 
   }
 
   .about-me-text {
-    max-width: 100%; /* Ajusta a largura máxima */
+    max-width: 100%; 
   }
 
   .about-me h2 {
-    font-size: 32px; /* Ajusta o tamanho do título */
+    font-size: 32px;
   }
 
   .about-me p {
-    font-size: 17px; /* Ajusta o tamanho do parágrafo */
+    font-size: 17px; 
     line-height: 1.5;
   }
 }
-/* Media queries para dispositivos móveis */
+/* Media queries para mobile */
 @media (max-width: 768px) {
   .scroll-down-button-a button {
-    display: none; /* Oculta o botão de rolagem */
+    display: none; 
   }
 
   .about-me {
-    padding: 5rem 2rem; /* Ajusta o padding para telas menores */
+    overflow-x: hidden;
+    padding: 5rem 2rem; 
   }
 
   .about-me-container {
-    flex-direction: column; /* Muda a direção para coluna */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    text-align: center; /* Centraliza o texto */
-    gap: 1rem; /* Adiciona um espaço entre os itens */
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+    gap: 1rem; 
   }
 
   .profile-picture {
-    width: 150px; /* Ajusta o tamanho da imagem de perfil */
+    width: 150px;
     height: 150px;
-    margin: 0 auto 20px; /* Centraliza a imagem e adiciona espaço abaixo */
-    order: -1; /* Garante que a foto de perfil fique no topo */
+    margin: 0 auto 20px; 
+    order: -1; 
   }
 
   .about-me-text {
-    max-width: 100%; /* Ajusta a largura máxima */
+    max-width: 100%;
   }
 
   .about-me h2 {
-    font-size: 28px; /* Ajusta o tamanho do título */
+    font-size: 28px;
   }
 
   .about-me p {
-    font-size: 16px; /* Ajusta o tamanho do parágrafo */
+    font-size: 16px;
     line-height: 1.4;
   }
 }
