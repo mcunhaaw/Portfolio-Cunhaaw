@@ -31,7 +31,7 @@ const skillsData = [
 
 const Skills = () => {
   const handleScrollDown = () => {
-    window.scrollTo({ top: 1925, behavior: 'smooth' });
+    window.scrollTo({ top: 2215, behavior: 'smooth' });
   };
   return (
     <div  className="skills">

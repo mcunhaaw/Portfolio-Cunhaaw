@@ -3,11 +3,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 1rem;
+  padding: 10rem 1rem;
   background: #f0f4f8; /* Fundo claro e neutro */
   color: #333;
   font-family: 'Arial', sans-serif;
-  margin-top: -100px;
+  margin-top: -135px;
 }
 
 /* Estilização do título da seção de contato */
@@ -131,4 +131,99 @@
   color: #008000; /* Verde para a mensagem de sucesso */
   font-weight: bold;
   margin-top: 1rem;
+}
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .contact {
+    padding: 5rem 1rem; /* Reduz o padding para telas menores */
+    margin-top: -80px; /* Ajusta a margem superior */
+  }
+
+  .contact h2 {
+    font-size: 28px; /* Reduz o tamanho do título */
+    margin-bottom: 1.5rem; /* Reduz o espaçamento inferior */
+  }
+
+  .contact-container {
+    flex-direction: column; /* Alinha os itens em coluna */
+    gap: 1.5rem; /* Reduz o espaçamento entre os itens */
+    max-width: 100%; /* Garante que o container não exceda a largura da tela */
+  }
+
+  .contact-form, .contact-info {
+    max-width: 100%; /* Ajusta a largura máxima para tela pequena */
+    margin: 0 auto; /* Centraliza os itens */
+  }
+
+  .contact-info {
+    margin-top: 1.5rem; /* Reduz a margem superior */
+  }
+
+  .social-media-c {
+    margin-top: -30px;
+    flex-direction: row; /* Alinha os ícones sociais em linha */
+    gap: 1rem; /* Ajusta o espaçamento entre os ícones */
+  }
+
+  .social-media-c li {
+    gap: 0.5rem; /* Reduz o espaçamento entre os ícones e o texto */
+  }
+
+  .social-media-c a {
+    font-size: 16px; /* Reduz o tamanho dos ícones */
+  }
+
+  .contact-form input, .contact-form textarea {
+    font-size: 14px; /* Reduz o tamanho da fonte dos campos de entrada */
+  }
+
+  .send-button {
+    padding: 0.5rem 1rem; /* Reduz o padding do botão */
+    font-size: 16px; /* Reduz o tamanho da fonte do botão */
+  }
+}
+
+/* Medium devices (portrait tablets and large phones, 600px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .contact {
+    padding: 7rem 1.5rem; /* Ajusta o padding para telas médias */
+    margin-top: -100px; /* Ajusta a margem superior */
+  }
+
+  .contact h2 {
+    font-size: 32px; /* Ajusta o tamanho do título */
+    margin-bottom: 1.5rem; /* Ajusta o espaçamento inferior */
+  }
+
+  .contact-container {
+    flex-direction: row; /* Alinha os itens em linha */
+    gap: 2rem; /* Ajusta o espaçamento entre os itens */
+    max-width: 100%; /* Garante que o container não exceda a largura da tela */
+  }
+
+  .contact-form, .contact-info {
+    max-width: 100%; /* Ajusta a largura máxima para tela média */
+  }
+
+  .contact-info {
+    margin-top: 1.5rem; /* Ajusta a margem superior */
+  }
+
+  .social-media-c {
+    flex-direction: row; /* Alinha os ícones sociais em linha */
+    gap: 1.5rem; /* Ajusta o espaçamento entre os ícones */
+  }
+
+  .social-media-c a {
+    font-size: 18px; /* Ajusta o tamanho dos ícones */
+  }
+
+  .contact-form input, .contact-form textarea {
+    font-size: 15px; /* Ajusta o tamanho da fonte dos campos de entrada */
+  }
+
+  .send-button {
+    padding: 0.75rem 1.5rem; /* Ajusta o padding do botão */
+    font-size: 18px; /* Ajusta o tamanho da fonte do botão */
+  }
 }

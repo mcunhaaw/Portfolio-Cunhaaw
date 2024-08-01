@@ -2,7 +2,7 @@
 
 .skills {
   position: relative;
-  padding: 4.6rem 2rem;
+  padding: 9.5rem 2rem;
   background: #121212; /* Fundo escuro e futurista */
   color: #e0e0e0; /* Texto claro e frio */
   font-family: 'Roboto', sans-serif; /* Fonte moderna */
@@ -14,7 +14,7 @@
   margin-bottom: 2rem;
   margin-top: -120px;
   font-size: 2.5rem;
-  margin-left: 30rem;
+  margin-left: 35rem;
   color: #ffffff; /* Cor do título em branco */
   position: relative;
   display: inline-block;
@@ -90,7 +90,7 @@
 .scroll-down-button-white {
   margin-bottom: 15px;
   position: absolute;
-  bottom: 1rem; /* Ajusta a distância do botão da parte inferior */
+  bottom: 5rem; /* Ajusta a distância do botão da parte inferior */
   left: 50%;
   transform: translateX(-50%);
 }
@@ -128,48 +128,41 @@
   }
 }
 
-
-/* Tablets */
-@media (max-width: 1024px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .skills {
+    display: block;
+  }
+  .skills h2 {
+    margin-left: 3rem;
+  }
   .skills-container {
-    flex-direction: column; /* Alinha as categorias verticalmente em tablets */
+    flex-direction: column;
+    align-items: center;
   }
-
   .skill-category {
-    gap: 1.5rem; /* Reduz o espaço entre o título da categoria e os cards */
+    margin-bottom: 2rem;
   }
-
   .skill-card {
-    width: 130px; /* Ajusta a largura dos cards em tablets */
+    width: 100%;
+    display: inline;
+    flex-direction: row;
   }
 }
 
-/* Smartphones */
-@media (max-width: 768px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 1048px) {
+  .skills h2 {
+    margin-left: 8rem;
+  }
+  .skills-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .skill-category {
+    margin-bottom: 2rem;
+  }
   .skill-card {
-    width: 120px; /* Ajusta a largura dos cards em smartphones */
-  }
-
-  .skill-icon {
-    font-size: 1.5rem; /* Reduz o tamanho dos ícones em smartphones */
-  }
-
-  .skill-name {
-    font-size: 0.9rem; /* Reduz o tamanho da fonte do nome das habilidades */
-  }
-}
-
-/* Pequenos smartphones */
-@media (max-width: 480px) {
-  .skill-card {
-    width: 100px; /* Ajusta a largura dos cards em pequenos smartphones */
-  }
-
-  .skill-icon {
-    font-size: 1.2rem; /* Reduz o tamanho dos ícones em pequenos smartphones */
-  }
-
-  .skill-name {
-    font-size: 0.8rem; /* Reduz o tamanho da fonte do nome das habilidades */
+    width: 110%;
   }
 }

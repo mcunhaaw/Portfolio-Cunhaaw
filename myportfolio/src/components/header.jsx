@@ -20,8 +20,9 @@ const Header = () => {
         </div>
         <ul className={`nav-links ${navOpen ? 'open' : ''}`}>
           <li><a href="#home">Home</a></li>
+          <li><a href="#aboutme">Sobre</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projetos</a></li>
-          <li><a href="#contact">Contato</a></li>
           <li className="git-hub">
             <a href="https://github.com/mcunhaaw">
               <i className="fa-brands fa-github"></i><div className="text-git">cunhaaw</div>

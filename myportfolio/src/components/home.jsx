@@ -6,7 +6,7 @@ const cv = '../assets/cv.pdf';
 
 const Home = () => {
   const handleScrollDown = () => {
-    window.scrollTo({ top: 660, behavior: 'smooth' });
+    window.scrollTo({ top: 670, behavior: 'smooth' });
   };
 
   return (

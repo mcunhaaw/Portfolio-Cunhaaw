@@ -1,10 +1,11 @@
 .footer {
     background-color: #ffffff;
     color: #333333;
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
     font-family: 'Arial', sans-serif;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -105px;
   }
   
   .footer-content {
@@ -44,19 +45,3 @@
   .footer-info a:hover {
     color: #666666;
   }
-  
-  /* Responsivo */
-  @media (max-width: 768px) {
-    .footer-content {
-      gap: 0.5rem;
-    }
-  
-    .social-media a {
-      font-size: 1.2rem;
-    }
-  
-    .footer-info p {
-      font-size: 0.9rem;
-    }
-  }
-  

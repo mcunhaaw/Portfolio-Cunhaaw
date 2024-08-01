@@ -23,10 +23,10 @@ const Contact = () => {
 
     emailjs.sendForm('gmailMessage', 'template_t4jpvc5', e.target, 'tt21T4HxQBSybDqpb')
       .then((result) => {
-        setSentStatus('Mensagem enviada com sucesso!');
+        alert('Obrigado por ter enviado a mensagem"')
         setFormData({ name: '', email: '', message: '' });
       }, (error) => {
-        setSentStatus('Erro ao enviar mensagem. Tente novamente.');
+        alert('Envie a mensagem novamente.');
       });
   };
 
